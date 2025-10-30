@@ -1,16 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A Fast‑Track Way to Identify Derelict and Vacant Homes for Refurbishment</title>
-  <meta name="description" content="Smartphone LiDAR + photogrammetry to digitise derelict sites, support a national database, and enable Revenue‑administered Derelict Sites Tax." />
-  <meta property="og:title" content="Fast‑Track Derelict & Vacant Homes — Policy Site" />
-  <meta property="og:description" content="Evidence and policy pathway: scan faster, cost less, enforce better." />
-  <meta property="og:type" content="website" />
+  <title>A Fast-Track Way to Identify Derelict and Vacant Homes</title>
+  <meta name="description" content="Smartphone LiDAR + photogrammetry for a national dereliction database, tax reform, and local authority enforcement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,236 +15,313 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">Derelict→Digital</a>
-      <nav class="nav">
-        <a href="#problem">Problem</a>
-        <a href="#solution">Solution</a>
-        <a href="#policy">Policy</a>
-        <a href="#alignment">Alignment</a>
-        <a href="#implementation">Implementation</a>
-        <a href="#about">About</a>
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-badge" aria-hidden="true">LiDAR</span>
+        <span class="brand-text">Derelict to Digital</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mainmenu" aria-label="Open menu">Menu</button>
+        <ul id="mainmenu" class="menu">
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#evidence">Evidence</a></li>
+          <li><a href="#models">3D Models</a></li>
+          <li><a href="#policy-impact">Policy Impact</a></li>
+          <li><a href="#alignment">Alignment</a></li>
+          <li><a href="#implementation">Implementation</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="cta" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container grid-2">
-        <div>
-          <h1 id="hero-title">A Fast‑Track Way to Identify Derelict and Vacant Homes for Refurbishment</h1>
-          <p class="lead">Smartphone LiDAR and photogrammetry can deliver verifiable, geo‑tagged evidence to power a national derelict & vacant property database and a Revenue‑administered Derelict Sites Tax.</p>
-          <div class="meta">
+    <section id="top" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1>A Fast-Track Way to Identify Derelict and Vacant Homes for Refurbishment</h1>
+          <p class="lede">
+            Ireland doesn’t just have a vacancy problem — it has a <strong>visibility</strong> problem.
+            This project uses <strong>smartphone LiDAR + photogrammetry</strong> to turn derelict buildings into data,
+            and data into homes.
+          </p>
+          <div class="hero-meta">
             <span><strong>Author:</strong> Dylan O’Donnell</span>
             <span><strong>Supervisor:</strong> Enda Dunican</span>
-            <span><strong>Institution:</strong> South East Technological University</span>
+            <span><strong>Institution:</strong> South East Technological University (SETU)</span>
           </div>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#policy">Read the Policy Case</a>
-            <a class="btn btn-ghost" href="#download">Download Policy Brief (PDF)</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#policy-impact">See Policy Impact</a>
+            <a class="btn" href="#evidence">View Evidence</a>
           </div>
         </div>
-        <div>
-          <div class="stat-card">
-            <div class="stat">
-              <span class="stat-number">100,000+</span>
-              <span class="stat-label">Vacant or derelict homes nationwide</span>
-            </div>
-            <div class="divider" role="separator" aria-hidden="true"></div>
-            <div class="stat">
-              <span class="stat-number">2,561</span>
-              <span class="stat-label">Officially listed under the Derelict Sites Act (2025)</span>
-            </div>
-            <p class="caption">Ireland has a visibility problem before it has a vacancy problem.</p>
-          </div>
+        <div class="hero-card reveal" aria-label="Key metrics">
+          <h2 class="card-title">The Case for Action</h2>
+          <ul class="stat-list">
+            <li>
+              <span class="stat">100,000+</span>
+              <span class="label">Vacant/derelict homes nationwide</span>
+            </li>
+            <li>
+              <span class="stat">2,561</span>
+              <span class="label">Officially listed under the Derelict Sites Act (2025)</span>
+            </li>
+          </ul>
+          <p class="fine-print">Source: Project analysis and official register counts (2025).</p>
+        </div>
+      </div>
+      <div class="hero-ornament" aria-hidden="true"></div>
+    </section>
+
+    <!-- OBJECTIVE -->
+    <section id="objective" class="section">
+      <div class="container">
+        <h2 class="reveal">Objective</h2>
+        <p class="reveal">
+          Test whether <strong>iPhone LiDAR</strong> and <strong>photogrammetry</strong> can create accurate, low-cost 3D models
+          of derelict buildings suitable for local authority assessment, enforcement under the <em>Derelict Sites Act (1990)</em>,
+          and a Revenue-administered <strong>Derelict Sites Tax</strong> within a unified national database.
+        </p>
+        <div class="pillbar reveal">
+          <span class="pill">Local Authority Assessment</span>
+          <span class="pill">Derelict Sites Act Evidence</span>
+          <span class="pill">Revenue Tax Roll-out</span>
+          <span class="pill">National Database</span>
         </div>
       </div>
     </section>
 
-    <!-- PROBLEM -->
-    <section id="problem" class="section" aria-labelledby="problem-title">
+    <!-- EVIDENCE -->
+    <section id="evidence" class="section alt">
       <div class="container">
-        <h2 id="problem-title">The Problem</h2>
-        <p>Local authorities must identify, register, and enforce action on derelict properties under the <em>Derelict Sites Act (1990)</em>. Without digital tooling, manual surveys remain slow and expensive—so thousands of potential homes are left unused and untaxed.</p>
-        <ul class="key-bullets">
-          <li>Registers are incomplete and inconsistent across councils.</li>
-          <li>Traditional surveys often take days and cost hundreds of euro per site.</li>
-          <li>Evidence is fragmented, slowing enforcement and dispute resolution.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SOLUTION / METHODS -->
-    <section id="solution" class="section alt" aria-labelledby="solution-title">
-      <div class="container">
-        <h2 id="solution-title">The Solution: Derelict → Digital</h2>
-        <p class="lead">Use consumer‑grade iPhone LiDAR and photogrammetry to create accurate 3D models and floor plans in hours—not days.</p>
-
-        <div class="comparison">
-          <table class="table" aria-describedby="comp-caption">
-            <caption id="comp-caption">Independent test comparing a professional survey with an iPhone 16 Pro LiDAR workflow.</caption>
-            <thead>
-              <tr>
-                <th scope="col">Metric</th>
-                <th scope="col">Traditional Survey</th>
-                <th scope="col">LiDAR</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Time</th>
-                <td>1–2 days</td>
-                <td>1–2 hours</td>
-              </tr>
-              <tr>
-                <th scope="row">Cost</th>
-                <td>€800–€1,500</td>
-                <td>€0–€20</td>
-              </tr>
-              <tr>
-                <th scope="row">Accuracy</th>
-                <td>~99%</td>
-                <td>97–99%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="workflow">
-          <ol class="steps">
-            <li><strong>Locate Derelict Property</strong></li>
-            <li><strong>Capture Interior Data</strong> (iPhone LiDAR / photogrammetry)</li>
-            <li><strong>Generate Textured Model & Export Floor Plan</strong></li>
-            <li><strong>Add to Digital Register</strong> (geo‑tagged, time‑stamped)</li>
-            <li><strong>Use as Evidence</strong> for enforcement and tax</li>
-          </ol>
-        </div>
-
-        <blockquote class="finding">Comparable accuracy at <strong>90% lower cost</strong> and <strong>10× faster</strong> — enabling councils to scan entire housing stocks within existing budgets.</blockquote>
-      </div>
-    </section>
-
-    <!-- POLICY -->
-    <section id="policy" class="section" aria-labelledby="policy-title">
-      <div class="container">
-        <h2 id="policy-title">Policy Case</h2>
-        <div class="grid-2 policy-grid">
-          <div>
-            <h3>What this enables</h3>
-            <ul class="key-bullets">
-              <li><strong>Revenue‑administered Derelict Sites Tax</strong>: consistent, defensible assessments.</li>
-              <li><strong>National Derelict & Vacant Database</strong>: unified evidence across 31 councils.</li>
-              <li><strong>Stronger Local Enforcement</strong>: digital proof under the Act.</li>
-              <li><strong>Better Reuse Incentives</strong>: fuels Repair & Lease and CPO programmes.</li>
+        <div class="grid-2">
+          <div class="reveal">
+            <h2>Evidence & Findings</h2>
+            <p>
+              Interior scans were conducted on a derelict property (Carlow test site) using smartphone LiDAR and photogrammetry.
+              Outputs were compared with professional survey data and evaluated for accuracy, cost, and usability.
+            </p>
+            <ul class="checklist">
+              <li>Generate <strong>textured 3D model</strong></li>
+              <li>Export <strong>digital floor plan</strong></li>
+              <li>Compare against <strong>professional survey</strong></li>
+              <li>Assess <strong>accuracy, cost, and speed</strong></li>
             </ul>
           </div>
-          <div>
-            <h3>Evidence & alignment</h3>
-            <ul class="key-bullets">
-              <li>Delivers geo‑tagged, verifiable 3D data for a unified register.</li>
-              <li>Supports Oireachtas recommendations on tax reform and national registers.</li>
-              <li>Replaces manual surveys with a <strong>fast digital workflow</strong>.</li>
-              <li>Provides transparent tracking via a public dashboard.</li>
-            </ul>
+          <div class="table-wrap reveal" role="region" aria-label="Technical comparison">
+            <table class="compare">
+              <caption class="sr-only">Traditional vs LiDAR comparison</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Metric</th>
+                  <th scope="col">Traditional Survey</th>
+                  <th scope="col">LiDAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Time</th>
+                  <td>1–2 days</td>
+                  <td>1–2 hours</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cost</th>
+                  <td>€800–€1,500</td>
+                  <td>€0–€20</td>
+                </tr>
+                <tr>
+                  <th scope="row">Accuracy</th>
+                  <td>~99%</td>
+                  <td>97–99%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="note">Result: ~10× faster at ~90% lower cost with comparable accuracy.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ALIGNMENT TABLE -->
-    <section id="alignment" class="section alt" aria-labelledby="align-title">
+    <!-- MODELS (Sketchfab Embeds) -->
+    <section id="models" class="section">
       <div class="container">
-        <h2 id="align-title">Alignment with National Housing Policy</h2>
-        <div class="comparison">
-          <table class="table" aria-describedby="align-caption">
-            <caption id="align-caption">How the project supports Government housing priorities.</caption>
-            <thead>
-              <tr>
-                <th scope="col">Policy Area</th>
-                <th scope="col">Project Contribution</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Derelict Sites Levy → Tax Reform</th>
-                <td>Provides verified data for Revenue collection and dispute reduction.</td>
-              </tr>
-              <tr>
-                <th scope="row">National Derelict & Vacant Database</th>
-                <td>Supplies digital foundation and 3D evidence from every council.</td>
-              </tr>
-              <tr>
-                <th scope="row">Expanded “Derelict” Definition</th>
-                <td>Captures boarded / uninhabitable interiors with visual proof.</td>
-              </tr>
-              <tr>
-                <th scope="row">Local Authority Capacity</th>
-                <td>Enables ~10× more surveys per year within current budgets.</td>
-              </tr>
-              <tr>
-                <th scope="row">Vacant Homes Plan (2025)</th>
-                <td>Delivers actionable, real‑time insight on reuse‑ready properties.</td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 class="reveal">Interactive 3D Models</h2>
+        <p class="reveal">Explore real outputs from the project. Use your mouse or touch to orbit, pan, and zoom.</p>
+        <div class="model-grid">
+          <figure class="model-card reveal">
+            <div class="sketchfab-embed" data-title="Bungalow (Carlow) — Derelict LiDAR (textured)" data-uid="3fa92844458744bf92fb8fab2516700c">
+              <iframe title="Bungalow (Carlow) — Derelict LiDAR (textured)"
+                      src="https://sketchfab.com/models/3fa92844458744bf92fb8fab2516700c/embed?autostart=1&ui_theme=dark&camera=0&dnt=1"
+                      allow="autoplay; fullscreen; xr-spatial-tracking"
+                      xr-spatial-tracking
+                      execution-while-out-of-viewport
+                      execution-while-not-rendered
+                      web-share
+                      loading="lazy"></iframe>
+            </div>
+            <figcaption>Bungalow (Carlow) — Derelict LiDAR (textured)</figcaption>
+          </figure>
+
+          <figure class="model-card reveal">
+            <div class="sketchfab-embed" data-title="Interior Scan — Untextured LiDAR" data-uid="1d1c884f11874e12a8eb35aa3c4c6e9b">
+              <iframe title="Interior Scan — Untextured LiDAR"
+                      src="https://sketchfab.com/models/1d1c884f11874e12a8eb35aa3c4c6e9b/embed?autostart=1&ui_theme=dark&camera=0&dnt=1"
+                      allow="autoplay; fullscreen; xr-spatial-tracking"
+                      xr-spatial-tracking
+                      execution-while-out-of-viewport
+                      execution-while-not-rendered
+                      web-share
+                      loading="lazy"></iframe>
+            </div>
+            <figcaption>Interior Scan — Untextured LiDAR</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section id="workflow" class="section">
+      <div class="container">
+        <h2 class="reveal">Smartphone LiDAR Workflow</h2>
+        <ol class="workflow reveal">
+          <li><strong>Locate</strong> – Identify a derelict or vacant property</li>
+          <li><strong>Capture</strong> – Scan interior with smartphone LiDAR/photogrammetry</li>
+          <li><strong>Model</strong> – Generate 3D model & floor plan</li>
+          <li><strong>Register</strong> – Add geo-tagged record to digital register</li>
+          <li><strong>Enforce</strong> – Use as evidence for levy/tax & compliance</li>
+        </ol>
+        <div class="media-grid">
+          <figure class="media reveal">
+            <div class="media-box" aria-hidden="true">Image Placeholder</div>
+            <figcaption>iPhone LiDAR interior scan (Carlow)</figcaption>
+          </figure>
+          <figure class="media reveal">
+            <div class="media-box" aria-hidden="true">3D Model</div>
+            <figcaption>Textured model generated from scan</figcaption>
+          </figure>
+          <figure class="media reveal">
+            <div class="media-box" aria-hidden="true">Floor Plan</div>
+            <figcaption>Digital floor plan export</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- POLICY IMPACT -->
+    <section id="policy-impact" class="section alt">
+      <div class="container">
+        <h2 class="reveal">Policy Impact</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Derelict Sites Tax (Revenue)</h3>
+            <p>Provides verified, geo-tagged evidence for fair, consistent taxation and fewer disputes.</p>
+          </article>
+          <article class="card reveal">
+            <h3>National Derelict & Vacant Database</h3>
+            <p>Creates a unified evidence base across all 31 local authorities; integrates with ePlanning.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Stronger Local Enforcement</h3>
+            <p>Digital proof under the Derelict Sites Act (1990); accelerates identification and action.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Better Reuse Incentives</h3>
+            <p>Feeds Repair & Lease and CPO funding decisions with objective condition data.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Vacant Homes Plan (2025)</h3>
+            <p>Supports real-time visibility into reuse-ready properties and outcomes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALIGNMENT -->
+    <section id="alignment" class="section">
+      <div class="container">
+        <h2 class="reveal">Alignment with National Housing Policy</h2>
+        <div class="grid-2">
+          <div class="reveal">
+            <ul class="ticklist">
+              <li>Low-cost scans adoptable by all <strong>31 local authorities</strong></li>
+              <li>Integration pathway with <strong>Revenue</strong> and <strong>ePlanning</strong> systems</li>
+              <li>Enables <strong>10× more surveys per year</strong> within existing budgets</li>
+              <li>Builds the <strong>digital foundation</strong> for reuse and tax reform</li>
+            </ul>
+          </div>
+          <aside class="finding reveal">
+            <h3>Key Finding</h3>
+            <p><strong>Comparable accuracy at 90% lower cost and ~10× faster</strong> — making national-scale coverage feasible now.</p>
+          </aside>
         </div>
       </div>
     </section>
 
     <!-- IMPLEMENTATION -->
-    <section id="implementation" class="section" aria-labelledby="impl-title">
-      <div class="container grid-2">
-        <div>
-          <h2 id="impl-title">Implementation Path</h2>
-          <ol class="steps">
-            <li><strong>Pilot with one local authority</strong> (e.g., Carlow).</li>
-            <li><strong>Integrate scans</strong> with ePlanning + Revenue systems.</li>
-            <li><strong>Roll out nationally</strong> with a live dereliction register.</li>
-            <li><strong>Train staff</strong> on smartphone workflows and QA.</li>
-          </ol>
-        </div>
-        <aside class="aside">
-          <h3>Scalable today</h3>
-          <p>Low‑cost LiDAR scanning can be adopted by all 31 local authorities, enabling a national evidence base for enforcement and reuse.</p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- DOWNLOADS / LINKS -->
-    <section id="download" class="section alt" aria-labelledby="dl-title">
+    <section id="implementation" class="section alt">
       <div class="container">
-        <h2 id="dl-title">Resources</h2>
-        <ul class="resource-list">
-          <li><a href="#" aria-label="Download the policy brief PDF">📥 Policy Brief (PDF)</a></li>
-          <li><a href="#" aria-label="View a sample 3D model on Sketchfab">📊 Sample 3D Scan (Sketchfab)</a></li>
-          <li><a href="#" aria-label="Email the researcher">📬 Contact the Researcher</a></li>
-        </ul>
+        <h2 class="reveal">Implementation Path</h2>
+        <ol class="steps reveal">
+          <li><strong>Pilot</strong> with one local authority (e.g., Carlow)</li>
+          <li><strong>Integrate</strong> scan data with Revenue & ePlanning</li>
+          <li><strong>Roll out</strong> to all councils with shared standards</li>
+          <li><strong>Train</strong> local staff on smartphone LiDAR workflows</li>
+          <li><strong>Publish</strong> a public dashboard for transparency</li>
+        </ol>
+        <div class="cta-row reveal">
+          <a class="btn primary" href="#" aria-disabled="true">Download Policy Brief (PDF)</a>
+          <a class="btn" href="#" aria-disabled="true">View Sample 3D Scan (Sketchfab)</a>
+        </div>
+        <p class="fine-print">Links are placeholders — replace with your live assets.</p>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container grid-2">
-        <div>
-          <h2 id="about-title">About the Researcher</h2>
-          <p><strong>Dylan O’Donnell</strong> — B.Sc. (Hons) in Information Technology Management, South East Technological University. Supervised by <strong>Enda Dunican</strong>. Selected for <em>Póstaeir san Oireachtas (2025)</em>, Ireland’s national undergraduate policy research showcase.</p>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="reveal">About the Researcher</h2>
+        <p class="reveal">
+          <strong>Dylan O’Donnell</strong> — B.Sc. (Hons) Information Technology Management,
+          South East Technological University (SETU). Project supervised by <strong>Enda Dunican</strong>.
+          Selected for <strong>Póstaeir san Oireachtas (2025)</strong>, Ireland’s national undergraduate policy showcase.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section footer-cta">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2>Work with Us</h2>
+          <p>Interested in piloting this workflow in your local authority or department? Get in touch.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:dylan@example.com">dylan@example.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dylan-o-donnell/" target="_blank" rel="noopener">linkedin.com/in/dylan-o-donnell</a></li>
+          </ul>
         </div>
-        <div class="quote">
-          <p>“This project turns derelict buildings into data — and data into homes.”</p>
-        </div>
+        <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Thanks! Replace this with form endpoint.');">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button class="btn primary" type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Dylan O’Donnell · Derelict→Digital</p>
-      <a href="#" class="back-to-top" aria-label="Back to top">↑ Back to top</a>
+    <div class="container">
+      <p>&copy; 2025 Dylan O’Donnell · Derelict to Digital · Made for policy impact.</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
